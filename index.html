@@ -20,16 +20,26 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
         }
         h1 {
             font-size: 2em;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>I'm Sorry 🥺</h1>
-        <p>I love you, Dawt ❤️ </p>
+        <p>I love you, Dawt ❤️</p>
     </div>
 </body>
 </html>
